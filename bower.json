@@ -1,0 +1,11 @@
+{
+        "name": "make-it-happen-jsonforms",
+        "description": "Make it Happen Example for JSON Forms",
+        "version": "0.0.1",
+        "homepage": "https://github.com/edgarmueller/make-it-happen-jsonforms",
+        "license": "MIT",
+        "private": true,
+        "dependencies": {
+            "jsonforms": "latest"
+        }
+}
