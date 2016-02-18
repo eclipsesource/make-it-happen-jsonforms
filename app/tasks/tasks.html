@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-xs-8">
+    <div class="panel-primary panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Tasks</strong></h3>
+      </div>
+      <div class="panel-body" style="line-height: 2.0">
+        <small class="muted">Click on a task item to view its details.</small>
+        <ul class="nav nav-pills nav-stacked">
+          <li ng-repeat="task in tasks" ui-sref-active="active">
+            <a ui-sref="tasks.detail({taskId:task.id})">{{task.title}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div ui-view class="col-xs-4"></div>
+</div>
