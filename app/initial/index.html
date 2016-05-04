@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="MiHexample">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Make It Happen</title>
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+
+        <script src="lib/build.js"></script>
+
+        <script src="tasks.js"></script>
+        <script src="task_data.js"></script>
+        <script src="task_schema.js"></script>
+        <script src="task_uischema.js"></script>
+    </head>
+    <body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                    <strong>Make it happen Example</strong>
+                </h3>
+            </div>
+            <div class="panel-body jsf" style="line-height: 2.0">
+                <jsonforms schema="tc.taskSchema" ui-schema="tc.taskUISchema" data="tc.taskData"></jsonforms>
+            </div>
+        </div>
+    </body>
+</html>

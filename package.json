@@ -6,17 +6,21 @@
   "repository": "https://github.com/eclipsesource/make-it-happen-jsonforms",
   "license": "MIT",
   "dependencies":{
-    "bootstrap": "3.3.6"
+    "bootstrap": "3.3.6",
+    "angular-resource": "1.5.5"
   },
   "devDependencies": {
-    "bower": "^1.3.1",
-    "http-server": "^0.6.1",
-    "shelljs": "^0.2.6"
+    "npm-run-all":"1.8.0",
+    "lite-server": "2.2.0",
+    "json-server": "0.8.10"
   },
   "scripts": {
     "prestart": "npm install",
-    "start": "http-server -a localhost -p 8123 -c-1",
-
+    "start": "npm run initial",
+    "initial": "lite-server -c app/initial/bs-config.json",
+    "final": "npm-run-all --parallel  _final_frontend _final_backend",
+    "_final_frontend":"lite-server -c app/final/bs-config.json",
+    "_final_backend":"json-server --watch app/final/data/tasks.json --port 3004",
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
   }
 }

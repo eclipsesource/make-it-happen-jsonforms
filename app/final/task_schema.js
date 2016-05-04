@@ -1,30 +1,31 @@
-var TASK_SCHEMA={
+angular.module('MiHexample')
+.value("Schema",
+{
     "type": "object",
     "properties": {
-      "title": {
+      "name": {
         "type": "string"
       },
       "description": {
         "type": "string"
       },
-      "due-date": {
-        "type": "string",
-        "format": "date-time"
+      "done": {
+        "type": "boolean"
       },
       "comments": {
         "type": "array",
         "items": {
           "type": "object",
           "properties": {
+            "message": {
+              "type": "string"
+            },
             "date": {
               "type": "string",
               "format": "date-time"
-            },
-            "message": {
-              "type": "string"
             }
           }
         }
       }
     }
-};
+});

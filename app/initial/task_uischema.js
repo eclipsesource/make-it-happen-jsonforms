@@ -1,11 +1,13 @@
-var TASK_UISCHEMA={
+angular.module('MiHexample')
+.value("UISchema",
+{
     "type": "VerticalLayout",
-      "elements": [
+    "elements": [
         {
           "type": "Control",
-          "label": "Title",
+          "label": "Name",
           "scope": {
-            "$ref": "#/properties/title"
+            "$ref": "#/properties/name"
           }
         },
         {
@@ -20,17 +22,10 @@ var TASK_UISCHEMA={
         },
         {
           "type": "Control",
-          "label": "Due Date",
+          "label": "Done?",
           "scope": {
-            "$ref": "#/properties/due-date"
-          }
-        },
-        {
-          "type": "Control",
-          "label": "Comments",
-          "scope": {
-            "$ref": "#/properties/comments"
+            "$ref": "#/properties/done"
           }
         }
     ]
-};
+});
