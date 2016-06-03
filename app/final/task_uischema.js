@@ -5,14 +5,12 @@ angular.module('MiHexample')
     "elements": [
       {
           "type": "Control",
-          "label": "Name",
           "scope": {
             "$ref": "#/properties/name"
           }
         },
         {
           "type": "Control",
-          "label": "Description",
           "scope": {
             "$ref": "#/properties/description"
           },
@@ -22,20 +20,39 @@ angular.module('MiHexample')
         },
         {
           "type": "Control",
-          "label": "Done?",
           "scope": {
             "$ref": "#/properties/done"
           }
         },
         {
           "type": "Control",
-          "label": "Comments",
           "scope": {
             "$ref": "#/properties/comments"
           },
           "options": {
               "simple":true
           }
-      }
+        },
+        {
+            "type": "Control",
+            "scope": {
+                "$ref": "#/properties/recurrence"
+            }
+        },
+        {
+            "type": "Control",
+            "scope": {
+                "$ref": "#/properties/recurrence_interval"
+            },
+            "rule": {
+                "effect": "HIDE",
+                "condition": {
+                    "scope": {
+                        "$ref": "#/properties/recurrence"
+                    },
+                    "expectedValue": "Never"
+                }
+            }
+        }
     ]
 });

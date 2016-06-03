@@ -12,6 +12,10 @@ angular.module('MiHexample')
       "done": {
         "type": "boolean"
       },
+      "due_date":{
+        "type": "string",
+        // "format": "date-time"
+      },
       "comments": {
         "type": "array",
         "items": {
@@ -22,10 +26,18 @@ angular.module('MiHexample')
             },
             "date": {
               "type": "string",
-              "format": "date-time"
+            //   "format": "date-time"
             }
           }
         }
-      }
+    },
+    "recurrence": {
+        "type": "string",
+        "enum":["Never","Daily","Weekly","Monthly"]
+    },
+    "recurrence_interval":{
+        "type": "integer"
     }
+  },
+  "required": ["name"]
 });

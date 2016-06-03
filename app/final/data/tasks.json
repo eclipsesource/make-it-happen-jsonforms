@@ -4,25 +4,14 @@
       "id": 1,
       "name": "Send email to Adrian",
       "description": "Confirm if you have passed the subject",
-      "done": "false",
-      "comments": [
-        {
-          "id": "a",
-          "date": "2016-02-16",
-          "message": "I have passed the subject!"
-        },
-        {
-          "id": "b",
-          "date": "2016-02-17",
-          "message": "The app should include a way to complete tasks"
-        }
-      ]
+      "done": false
     },
     {
       "id": 2,
       "name": "Buy glovesaaa",
       "description": "I need them for the ski trip",
-      "done": true
+      "done": true,
+      "recurrence": "Never"
     }
   ]
 }

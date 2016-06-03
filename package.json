@@ -6,13 +6,15 @@
   "repository": "https://github.com/eclipsesource/make-it-happen-jsonforms",
   "license": "MIT",
   "dependencies":{
+    "jsonforms": "0.0.19",
     "bootstrap": "3.3.6",
     "angular-resource": "1.5.5"
   },
   "devDependencies": {
     "npm-run-all":"1.8.0",
     "lite-server": "2.2.0",
-    "json-server": "0.8.10"
+    "json-server": "0.8.10",
+    "typings": "0.6.5"
   },
   "scripts": {
     "prestart": "npm install",

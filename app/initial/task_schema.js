@@ -12,5 +12,6 @@ angular.module('MiHexample')
       "done": {
         "type": "boolean"
       }
-    }
+    },
+    "required": ["name"]
 });

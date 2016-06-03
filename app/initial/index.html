@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" ng-app="MiHexample">
-
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,13 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="css/app.css">
 
-        <script src="lib/build.js"></script>
+        <script src="node_modules/jsonforms/dist/jsonforms.js"></script>
 
         <script src="tasks.js"></script>
         <script src="task_data.js"></script>
         <script src="task_schema.js"></script>
         <script src="task_uischema.js"></script>
+        <script src="renderer/boolean-directive.js"></script>
     </head>
     <body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
         <div class="panel panel-primary">

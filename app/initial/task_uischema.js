@@ -22,7 +22,7 @@ angular.module('MiHexample')
         },
         {
           "type": "Control",
-          "label": "Done?",
+        //   "label": "Done?",
           "scope": {
             "$ref": "#/properties/done"
           }
