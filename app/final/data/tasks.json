@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Send email to Adrian",
+      "description": "Confirm if you have passed the subject",
+      "done": false
+    },
+    {
+      "id": 2,
+      "name": "Buy glovesaaa",
+      "description": "I need them for the ski trip",
+      "done": true,
+      "recurrence": "Never"
+    }
+  ]
+}
