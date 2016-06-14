@@ -39,7 +39,7 @@
                             <div class="panel-body" style="line-height: 2.0">
                                 <small class="muted">Click on a task item to view its details.</small>
                                 <ul class="nav nav-pills nav-stacked">
-                                    <li ng-repeat="task in tc.tasks track by task.id">
+                                    <li ng-repeat="task in tc.tasks track by task.id" ng-class="{selected: task.id===tc.selectedId}">
                                         <a ng-click="tc.selectDetail(task.id)">{{task.name}}</a>
                                     </li>
                                 </ul>
