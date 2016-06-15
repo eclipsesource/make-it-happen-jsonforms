@@ -4,8 +4,7 @@
         "baseDir": "./app/initial",
         "routes": {
             "/node_modules": "node_modules",
-            "/css": "app/css",
-            "/lib": "app/lib"
+            "/css": "app/css"
         }
     }
 }

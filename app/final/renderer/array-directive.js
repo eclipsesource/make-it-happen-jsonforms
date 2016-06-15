@@ -39,8 +39,12 @@ angular.module('MiHexample')
                     + "</div>"
                     + '<hr ng-show="!$last">'
                 + '</div>'
+                + "<span ng-if='vm.modelValue[vm.fragment]==undefined || vm.modelValue[vm.fragment].length==0'>"
+                + 'No Comments yet'
+                + '</span>'
             + '</fieldset>'
-            + '<hr/>'
+            + '<hr class="creation-separator"/>'
+            + '<h4>New Entry:</h4>'
             + '<jsonforms schema="vm.arraySchema" data="vm.submitElement"></jsonforms>'
             + '<input class="btn btn-primary" type="button" value="Add to {{vm.label}}" ng-click="vm.submitCallback()" ng-model="vm.submitElement"></input>'
         + '</jsonforms-layout>'
