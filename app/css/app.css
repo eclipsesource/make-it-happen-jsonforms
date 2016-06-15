@@ -7,3 +7,6 @@
     border-radius:4px;
     background-color: rgba(51, 122, 183, 0.2);
 }
+.jsf hr.creation-separator {
+    border: 1px inset black
+}

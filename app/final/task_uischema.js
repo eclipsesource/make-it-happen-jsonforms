@@ -3,21 +3,6 @@ angular.module('MiHexample')
 {
     "type": "VerticalLayout",
     "elements": [
-      {
-          "type": "Control",
-          "scope": {
-            "$ref": "#/properties/name"
-          }
-        },
-        {
-          "type": "Control",
-          "scope": {
-            "$ref": "#/properties/description"
-          },
-          "options": {
-              "multi":true
-          }
-        },
         {
           "type": "Control",
           "scope": {
@@ -27,10 +12,13 @@ angular.module('MiHexample')
         {
           "type": "Control",
           "scope": {
-            "$ref": "#/properties/comments"
-          },
-          "options": {
-              "simple":true
+            "$ref": "#/properties/name"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": {
+            "$ref": "#/properties/due_date"
           }
         },
         {
@@ -53,6 +41,24 @@ angular.module('MiHexample')
                     "expectedValue": "Never"
                 }
             }
+        },
+        {
+          "type": "Control",
+          "scope": {
+            "$ref": "#/properties/description"
+          },
+          "options": {
+              "multi":true
+          }
+        },
+        {
+          "type": "Control",
+          "scope": {
+            "$ref": "#/properties/comments"
+          },
+          "options": {
+              "simple":true
+          }
         }
     ]
 });
