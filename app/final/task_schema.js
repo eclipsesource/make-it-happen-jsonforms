@@ -4,7 +4,8 @@ angular.module('MiHexample')
     "type": "object",
     "properties": {
       "name": {
-        "type": "string"
+        "type": "string",
+        "minLength": 3
       },
       "description": {
         "type": "string"
