@@ -1,0 +1,7 @@
+<jsonforms-control>
+    <input type="radio" id="{{vm.id}}" class="jsf-control-boolean" ng-model="vm.resolvedData[vm.fragment]" ng-change="vm.triggerChangeEvent()" ng-disabled="vm.uiSchema.readOnly" ng-value="true"/>
+    {{vm.label}}
+    <span style="min-width: 50px;display: inline-block;"/>
+    <input type="radio" id="{{vm.id}}" class="jsf-control-boolean" ng-model="vm.resolvedData[vm.fragment]" ng-change="vm.triggerChangeEvent()" ng-disabled="vm.uiSchema.readOnly" ng-value="false"/>
+    Not {{vm.label}}
+</jsonforms-control>

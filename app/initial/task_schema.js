@@ -1,5 +1,4 @@
-angular.module('MiHexample')
-.value("Schema",
+angular.module('MiHexample').value("Schema",
 {
     "type": "object",
     "properties": {

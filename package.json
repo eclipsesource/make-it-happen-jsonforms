@@ -7,9 +7,10 @@
   "license": "MIT",
   "dependencies":{
     "typings": "0.6.5",
-    "jsonforms": "0.0.21",
+    "jsonforms": "0.1.5",
     "bootstrap": "3.3.6",
-    "angular-resource": "1.5.5"
+    "angular-resource": "1.5.5",
+    "angular-ui-bootstrap": "1.3.3"
   },
   "devDependencies": {
     "npm-run-all":"1.8.0",

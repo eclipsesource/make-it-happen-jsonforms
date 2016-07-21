@@ -9,16 +9,19 @@
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
 
         <script src="node_modules/jsonforms/dist/jsonforms-bootstrap.js"></script>
+        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+        <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
         <script src="node_modules/angular-resource/angular-resource.js"></script>
 
         <script src="tasks.controller.js"></script>
         <script src="task_schema.js"></script>
         <script src="task_uischema.js"></script>
         <script src="task_service.js"></script>
-        <script src="renderer/array-directive.js"></script>
+        <script src="renderer/rating.control.js"></script>
+        <!--<script src="renderer/array-directive.js"></script>-->
     </head>
     <body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
-        <div class="panel panel-primary">
+    <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">
                     <strong>Make it happen Example</strong>
