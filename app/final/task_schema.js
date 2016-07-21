@@ -1,5 +1,4 @@
-angular.module('MiHexample')
-.value("Schema",
+angular.module('MiHexample').value("Schema",
 {
     "type": "object",
     "properties": {
@@ -9,6 +8,10 @@ angular.module('MiHexample')
       },
       "description": {
         "type": "string"
+      },
+      "rating": {
+        "type": "integer",
+        "maximum": 5
       },
       "done": {
         "type": "boolean"

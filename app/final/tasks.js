@@ -1,5 +1,5 @@
-angular.module('MiHexample', ['MiHexample.service','jsonforms-bootstrap'])
-.controller('TasksController', ['Schema','UISchema','Tasks','$scope',function(Schema,UISchema,Tasks,$scope) {
+angular.module('MiHexample', ['MiHexample.service', 'jsonforms', 'ui.bootstrap'])
+.controller('TasksController', ['Schema','UISchema','Tasks',function(Schema,UISchema,Tasks) {
     var vm = this;
     vm.taskSchema = Schema;
     vm.taskUISchema = UISchema;
@@ -26,7 +26,7 @@ angular.module('MiHexample', ['MiHexample.service','jsonforms-bootstrap'])
     vm.remove=function(id){
         vm.dataLoaded=false;
         vm.taskData=undefined;
-        let toDelete = Tasks.get({taskId: id}, function() {
+        var toDelete = Tasks.get({taskId: id}, function() {
             toDelete.$delete(function(){
                 vm.query();
             });
