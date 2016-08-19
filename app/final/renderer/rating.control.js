@@ -6,8 +6,8 @@ angular.module('MiHexample')
                 var vm = this;
                 BaseController.call(vm, $scope);
                 vm.max = function() {
-                    if (vm.resolvedSchema['maximum'] !== undefined) {
-                        return vm.resolvedSchema['maximum'];
+                    if (vm.resolvedSchema.maximum !== undefined) {
+                        return vm.resolvedSchema.maximum;
                     } else {
                         return 5;
                     }
