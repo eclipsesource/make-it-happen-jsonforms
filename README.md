@@ -1,11 +1,11 @@
 # Make it Happen Example
 
-Make it Happen Example for [JSON Forms](github.eclipsesource.com/jsonforms/)
+Make it Happen Example for [JSON Forms](http://github.com/eclipsesource/jsonforms/)
 
 
 ## Getting Started
 
-To get you started you can simply clone the MiHexample repository and install the dependencies:
+To get you started, you can simply clone this repository and install all necessary dependencies.
 
 ### Prerequisites
 
