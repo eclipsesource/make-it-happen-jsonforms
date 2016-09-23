@@ -1,4 +1,4 @@
-angular.module('MiHexample', ['MiHexample.service', 'jsonforms', 'ui.bootstrap'])
+angular.module('MiHexample', ['MiHexample.service', 'jsonforms', 'jsonforms-bootstrap', 'ui.bootstrap'])
     .controller('TasksController', ['Schema', 'UISchema', 'Tasks', function(Schema, UISchema, Tasks) {
         var vm = this;
         vm.taskSchema = Schema;

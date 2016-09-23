@@ -17,7 +17,7 @@
     <script src="task.schema.js"></script>
     <script src="task.uischema.js"></script>
     <script src="task.service.js"></script>
-    <script src="renderer/rating.control.js"></script>
+    <!-- <script src="renderer/rating.control.js"></script> -->
 </head>
 <body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
 <div class="panel panel-primary">
@@ -60,10 +60,12 @@
                     <div class="panel-heading clearfix">
                         <div class="btn-group pull-right" role="group">
                             <button type="button" class="btn btn-default" aria-label="Save" ng-click="tc.save()">
-                                <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                <span>Submit</span>
                             </button>
                             <button type="button" class="btn btn-default" aria-label="Close" ng-click="tc.close()">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                <span>Delete</span>
                             </button>
                         </div>
                         <h3 class="panel-title" style="line-height:34px;">
@@ -71,7 +73,7 @@
                         </h3>
                     </div>
                     <div class="panel-body jsf" style="line-height: 2.0">
-                        <jsonforms schema="tc.taskSchema" ui-schema="tc.taskUISchema" data="tc.taskData"></jsonforms>
+                        <jsonforms schema="tc.taskSchema" uischema="tc.taskUISchema" data="tc.taskData"></jsonforms>
                     </div>
                 </div>
                 <div class="panel panel-primary" ng-show="tc.taskData && !tc.dataLoaded">
