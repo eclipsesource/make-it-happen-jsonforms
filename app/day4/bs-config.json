@@ -1,11 +1,10 @@
 {
     "port": 8123,
     "server": {
-        "baseDir": "./app/final",
+        "baseDir": "./app/day4",
         "routes": {
             "/node_modules": "node_modules",
-            "/css": "app/css",
-            "/renderer": "app/renderer"
+            "/css": "app/css"
         }
     }
 }

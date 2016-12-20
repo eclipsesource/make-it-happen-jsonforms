@@ -18,7 +18,7 @@ angular.module('MiHexample').value("Schema",
       },
       "due_date":{
         "type": "string",
-        "format": "date-time"
+        "format": "date"
       },
       "comments": {
         "type": "array",
@@ -30,7 +30,7 @@ angular.module('MiHexample').value("Schema",
             },
             "date": {
               "type": "string",
-              "format": "date-time"
+              "format": "date"
             }
           }
         }

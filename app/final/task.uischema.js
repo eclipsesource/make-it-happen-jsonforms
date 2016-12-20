@@ -62,6 +62,12 @@ angular.module('MiHexample').value("UISchema", {
         {
           "type": "Control",
           "scope": {
+            "$ref": "#/properties/rating"
+          }
+        },
+        {
+          "type": "Control",
+          "scope": {
             "$ref": "#/properties/comments"
           },
           "options": {

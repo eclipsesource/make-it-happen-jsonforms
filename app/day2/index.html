@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="MiHexample">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Make It Happen Day 2</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
+
+    <script src="node_modules/jsonforms/dist/jsonforms.js"></script>
+    <script src="node_modules/jsonforms/dist/jsonforms-bootstrap.js"></script>
+
+    <script src="tasks.controller.js"></script>
+    <script src="task.data.js"></script>
+    <script src="task.schema.js"></script>
+</head>
+<body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            <strong>Make it happen Day 2</strong>
+        </h3>
+    </div>
+    <div class="panel-body jsf" style="line-height: 2.0">
+        <jsonforms schema="tc.taskSchema" uischema="tc.taskUISchema" data="tc.taskData"></jsonforms>
+    </div>
+</div>
+</body>
+</html>
