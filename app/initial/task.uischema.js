@@ -5,14 +5,12 @@ angular.module('MiHexample')
     "elements": [
         {
           "type": "Control",
-          "label": "Name",
           "scope": {
             "$ref": "#/properties/name"
           }
         },
         {
           "type": "Control",
-          "label": "Description",
           "scope": {
             "$ref": "#/properties/description"
           },
@@ -22,7 +20,6 @@ angular.module('MiHexample')
         },
         {
           "type": "Control",
-        //   "label": "Done?",
           "scope": {
             "$ref": "#/properties/done"
           }

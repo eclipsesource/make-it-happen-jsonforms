@@ -20,6 +20,7 @@ angular.module('MiHexample')
     .run(['RendererService', 'JSONFormsTesters', function(RendererService, Testers) {
         RendererService.register('rating-control', Testers.and(
             Testers.uiTypeIs('Control'),
-            Testers.schemaTypeIs('integer')
+            Testers.schemaTypeIs('integer'),
+            Testers.schemaPropertyName('rating')
         ), 10);
     }]);
