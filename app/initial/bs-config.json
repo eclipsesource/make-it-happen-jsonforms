@@ -3,7 +3,8 @@
     "server": {
         "baseDir": "./app/initial",
         "routes": {
-            "/node_modules": "node_modules"
+            "/node_modules": "node_modules",
+            "/app": "app"
         }
     }
 }

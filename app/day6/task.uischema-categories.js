@@ -1,5 +1,4 @@
-angular.module('MiHexample')
-.value("UISchema",
+var UISchema =
 {
   "type": "Categorization",
   "elements": [
@@ -81,4 +80,4 @@ angular.module('MiHexample')
       ]
     }
   ]
-});
+};

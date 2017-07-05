@@ -1,5 +1,4 @@
-angular.module('MiHexample')
-.value("UISchema",
+var UISchema=
 {
   "type": "VerticalLayout",
   "elements": [
@@ -26,4 +25,4 @@ angular.module('MiHexample')
       }
     }
   ]
-});
+};

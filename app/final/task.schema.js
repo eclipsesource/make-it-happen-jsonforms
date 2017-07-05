@@ -1,4 +1,4 @@
-angular.module('MiHexample').value("Schema",
+var Schema =
 {
     "type": "object",
     "properties": {
@@ -44,4 +44,4 @@ angular.module('MiHexample').value("Schema",
     }
   },
   "required": ["name"]
-});
+};

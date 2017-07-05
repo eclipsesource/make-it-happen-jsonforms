@@ -1,25 +1,26 @@
 <!doctype html>
-<html lang="en" ng-app="MiHexample">
+<html lang="en" >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Make It Happen</title>
     <link rel="stylesheet" href="custom.css"/>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="/node_modules/jsonforms/dist/jsonforms-bootstrap.css"/>
+    <link rel="stylesheet" href="/node_modules/jsonforms/dist/jsonforms-example.css"/>
 
+    <script src="node_modules/jsonforms/lib/native-shim.js"></script>
     <script src="node_modules/jsonforms/dist/jsonforms.js"></script>
-    <script src="node_modules/jsonforms/dist/jsonforms-bootstrap.js"></script>
-    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="app/makeithappen.js"></script>
+    <script src="finalapp.js"></script>
 
-    <script src="tasks.controller.js"></script>
+    <!-- <script src="node_modules/angular-resource/angular-resource.js"></script> -->
+
     <script src="task.schema.js"></script>
     <script src="task.uischema.js"></script>
-    <script src="task.service.js"></script>
     <script src="renderer/rating.control.js"></script>
-    <script src="renderer/array.template.js"></script>
+    <!-- <script src="renderer/array.template.js"></script> -->
 </head>
-<body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
+<body style="max-width:1200px; margin:1vw auto;">
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">
@@ -27,60 +28,7 @@
         </h3>
     </div>
     <div class="panel-body">
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="panel panel-primary">
-                    <div class="panel-heading clearfix">
-                        <button role="button" class="btn btn-default pull-right" aria-label="Left Align" ng-click="tc.addNew()">
-                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                        </button>
-                        <h3 class="panel-title" style="line-height:34px;">
-                            <strong>Task List</strong>
-                        </h3>
-                    </div>
-                    <div class="panel-body" style="line-height: 2.0">
-                        <small class="muted">Click on a task item to view its details.</small>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="clearfix" ng-repeat="task in tc.tasks track by task.id" ng-class="{selected: task.id===tc.selectedId}">
-                                <a ng-click="tc.selectDetail(task.id)">
-                                    {{task.name}}
-                                    <div class="btn-group btn-group-sm pull-right" role="group">
-                                        <button type="button" class="btn btn-default" aria-label="Delte" ng-click="tc.remove(task.id)">
-                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-6">
-                <div class="panel panel-primary" ng-if="tc.taskData && tc.dataLoaded">
-                    <div class="panel-heading clearfix">
-                        <div class="btn-group pull-right" role="group">
-                            <button type="button" class="btn btn-default" aria-label="Save" ng-click="tc.save()">
-                                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-                                <span>Submit</span>
-                            </button>
-                        </div>
-                        <h3 class="panel-title" style="line-height:34px;">
-                            <strong>Task Detail</strong>
-                        </h3>
-                    </div>
-                    <div class="panel-body jsf" style="line-height: 2.0">
-                        <jsonforms schema="tc.taskSchema" uischema="tc.taskUISchema" data="tc.taskData"></jsonforms>
-                    </div>
-                </div>
-                <div class="panel panel-primary" ng-show="tc.taskData && !tc.dataLoaded">
-                    <div class="panel-heading clearfix">
-                        <h3 class="panel-title" style="line-height:34px;">
-                            <strong>Loading data ...</strong>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <final-app></final-app>
     </div>
 </div>
 </body>

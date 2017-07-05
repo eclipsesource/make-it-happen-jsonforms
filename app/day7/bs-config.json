@@ -4,7 +4,8 @@
         "baseDir": "./app/day7",
         "routes": {
             "/node_modules": "node_modules",
-            "/renderer": "app/renderer"
+            "/renderer": "app/renderer",
+            "/app": "app"
         }
     }
 }
