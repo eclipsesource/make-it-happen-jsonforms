@@ -1,7 +1,7 @@
 {
     "port": 8123,
     "server": {
-        "baseDir": "./app/final",
+        "baseDir": "./app/day6",
         "routes": {
             "/node_modules": "node_modules",
             "/renderer": "app/renderer",

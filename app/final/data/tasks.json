@@ -12,7 +12,9 @@
         {
           "message": "EMail must be reviewed"
         }
-      ]
+      ],
+      "recurrence": "Weekly",
+      "recurrence_interval": 22
     },
     {
       "id": 2,

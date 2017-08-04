@@ -1,22 +1,21 @@
 <!doctype html>
-<html lang="en" ng-app="MiHexample">
+<html lang="en" >
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Make It Happen</title>
-    <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="/node_modules/jsonforms/dist/jsonforms-bootstrap.css"/>
+    <link rel="stylesheet" href="/node_modules/jsonforms/dist/jsonforms-example.css"/>
 
+    <script src="node_modules/jsonforms/lib/native-shim.js"></script>
     <script src="node_modules/jsonforms/dist/jsonforms.js"></script>
-    <script src="node_modules/jsonforms/dist/jsonforms-bootstrap.js"></script>
+    <script src="app/makeithappen.js"></script>
 
-    <script src="tasks.controller.js"></script>
     <script src="task.data.js"></script>
     <script src="task.schema.js"></script>
     <script src="task.uischema.js"></script>
 </head>
-<body style="max-width:1200px; margin:1vw auto;" ng-controller="TasksController as tc">
+<body style="max-width:1200px; margin:1vw auto;">
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">
@@ -24,7 +23,7 @@
         </h3>
     </div>
     <div class="panel-body jsf" style="line-height: 2.0">
-        <jsonforms schema="tc.taskSchema" uischema="tc.taskUISchema" data="tc.taskData"></jsonforms>
+        <make-it-happen></make-it-happen>
     </div>
 </div>
 </body>

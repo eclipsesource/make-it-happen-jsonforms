@@ -6,10 +6,8 @@
   "repository": "https://github.com/eclipsesource/make-it-happen-jsonforms",
   "license": "MIT",
   "dependencies": {
-    "angular-resource": "1.5.9",
-    "angular-ui-bootstrap": "2.3.1",
-    "bootstrap": "3.3.7",
-    "jsonforms": "1.4.1"
+    "bootstrap": "^3.3.7",
+    "jsonforms": "next"
   },
   "devDependencies": {
     "jshint": "^2.9.3",
@@ -28,6 +26,8 @@
     "day3": "lite-server -c app/day3/bs-config.json",
     "day4": "lite-server -c app/day4/bs-config.json",
     "day5": "lite-server -c app/day5/bs-config.json",
+    "day6": "lite-server -c app/day6/bs-config.json",
+    "day7": "lite-server -c app/day7/bs-config.json",
     "final": "npm-run-all --parallel  _final_frontend _final_backend",
     "_final_frontend": "lite-server -c app/final/bs-config.json",
     "_final_backend": "json-server --watch app/final/data/tasks.json --port 3004",

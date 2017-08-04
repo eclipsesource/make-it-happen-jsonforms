@@ -66,15 +66,6 @@ var UISchema =
           }
         }
       ]
-    },
-    {
-      "type": "Control",
-      "scope": {
-        "$ref": "#/properties/comments"
-      },
-      "options": {
-          "simple":true
-      }
     }
   ]
 };
