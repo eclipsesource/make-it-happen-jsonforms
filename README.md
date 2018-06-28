@@ -1,3 +1,5 @@
+# This project is outdated. Please use https://github.com/eclipsesource/make-it-happen-react instead. 
+
 # Make it Happen Example
 
 Make it Happen Example for [JSON Forms](http://github.com/eclipsesource/jsonforms/)
