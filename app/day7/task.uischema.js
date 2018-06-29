@@ -67,15 +67,6 @@ angular.module('MiHexample')
           }
         }
       ]
-    },
-    {
-      "type": "Control",
-      "scope": {
-        "$ref": "#/properties/comments"
-      },
-      "options": {
-          "simple":true
-      }
     }
   ]
 });
