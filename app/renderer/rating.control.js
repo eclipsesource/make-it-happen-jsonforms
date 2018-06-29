@@ -3,8 +3,7 @@ angular.module('MiHexample')
         return {
             restrict: 'E',
             controller: ['BaseController', '$scope', function(BaseController, $scope) {
-                var vm = this;
-                BaseController.call(vm, $scope);
+                var vm = new BaseController($scope);
                 vm.max = function() {
                     if (vm.resolvedSchema.maximum !== undefined) {
                         return vm.resolvedSchema.maximum;
@@ -12,6 +11,7 @@ angular.module('MiHexample')
                         return 5;
                     }
                 };
+                return vm;
             }],
             controllerAs: 'vm',
             templateUrl: './renderer/rating.control.html'
